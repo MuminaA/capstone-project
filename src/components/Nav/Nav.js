@@ -5,8 +5,8 @@ import Logo from '../../assets/Logo.svg';
 function Nav() {
     return (
         <nav>
-            <img src={Logo}></img>
-            <ul>
+            <img src={Logo} className='' alt={Logo}></img>
+            <ul className='nav-links'>
                 <li><a href='/'>Home</a></li>
                 <li><a href=''>About</a></li>
                 <li><a href=''>Menu</a></li>
