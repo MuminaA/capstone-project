@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../assets/MarioandAdrianA.jpg";
-import img2 from "../../assets/MarioandAdrianb.jpg";
+import img1 from "../../../assets/MarioandAdrianA.jpg";
+import img2 from "../../../assets/MarioandAdrianb.jpg";
 
-function About() {
+const About = () => {
   return (
     <div className="about">
       <div className="about-container">

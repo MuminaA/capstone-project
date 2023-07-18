@@ -1,7 +1,7 @@
 import React from "react";
-import { testimonials } from "../../Data/Data";
+import { testimonials } from "../../../Data/Data";
 
-function Testimonials() {
+const Testimonials = () => {
   return (
     <div className="testimonials">
       <div className="testimonials-container">
@@ -9,7 +9,7 @@ function Testimonials() {
         <div className="test-container">
           {testimonials.map((item) => (
             <div className="test-content">
-              <span>{item.rating}</span>
+              <>{item.rating}</>
               <div className="test-info">
                 <img src={item.image} alt={item.image} className="test-img"></img>
                 <span className="test-name">{item.name}</span>

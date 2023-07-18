@@ -1,16 +1,16 @@
 import React from "react";
-import {food} from "../../Data/Data";
-import Delivery from '../../assets/delivery.png';
+import {food} from "../../../Data/Data";
+import Delivery from '../../../assets/delivery.png';
 
-function Specials() {
+const Specials = () => {
   return (
     <div className="specials">
       <div className="specials-container">
         <div className="top">
           <h1>This weeks specials!</h1>
-          <div>
+          <>
             <button className="specials-btn">Online Menu</button>
-          </div>
+          </>
         </div>
         <div className="bottom">
           {food.map((item) => (

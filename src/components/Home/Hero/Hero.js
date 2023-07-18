@@ -1,7 +1,7 @@
 import React from "react";
-import Himg from "../../assets/restauranfood.jpg";
+import Himg from "../../../assets/restauranfood.jpg";
 
-function Hero() {
+const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-container">
@@ -12,9 +12,9 @@ function Hero() {
             We are a family owned mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <div>
+          <>
             <button className="reserve-btn">Reserve a table</button>
-          </div>
+          </>
         </div>
         <div className="Hright-side">
           <img src={Himg} alt={Himg} className="hero-img"></img>
