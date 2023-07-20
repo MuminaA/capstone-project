@@ -1,6 +1,7 @@
 import React from "react";
 import {food} from "../../../Data/Data";
 import Delivery from '../../../assets/delivery.png';
+import './Specials.css';
 
 const Specials = () => {
   return (

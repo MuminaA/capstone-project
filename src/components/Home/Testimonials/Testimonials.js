@@ -1,5 +1,6 @@
 import React from "react";
 import { testimonials } from "../../../Data/Data";
+import './Testimonials.css'
 
 const Testimonials = () => {
   return (

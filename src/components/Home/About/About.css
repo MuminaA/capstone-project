@@ -1,0 +1,42 @@
+/* About section */
+
+.about-container {
+  width: 58%;
+  margin: 4rem auto 8rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.about-item {
+  margin-top: 2rem;
+}
+
+.res-location {
+  color: black;
+}
+
+.about-desc {
+  max-width: 500px;
+  color: var(--main-color);
+}
+
+.about-img,
+.about-img2 {
+  /* width: 20%;  */
+  height: 70%;
+  width: 15rem;
+  /* height: 17rem;*/
+  object-fit: fill;
+  position: absolute;
+  border-radius: 16px;
+}
+
+.about-img {
+  right: 0;
+}
+
+.about-img2 {
+  right: 8rem;
+  top: 8rem;
+}

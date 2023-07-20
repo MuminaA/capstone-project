@@ -1,5 +1,6 @@
 import React from "react";
 import Himg from "../../../assets/restauranfood.jpg";
+import './Hero.css';
 
 const Hero = () => {
   return (
@@ -12,9 +13,7 @@ const Hero = () => {
             We are a family owned mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <>
-            <button className="reserve-btn">Reserve a table</button>
-          </>
+          <button className="reserve-btn">Reserve a table</button>
         </div>
         <div className="Hright-side">
           <img src={Himg} alt={Himg} className="hero-img"></img>

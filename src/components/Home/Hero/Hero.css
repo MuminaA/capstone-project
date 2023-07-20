@@ -1,0 +1,61 @@
+/* Hero section */
+
+.hero {
+  background-color: var(--main-color);
+  /* position: relative; */
+}
+
+.hero-container {
+  display: flex;
+  padding-top: 2rem;
+  /* margin: 0 25rem 9rem; */
+  max-width: 58%;
+  margin: 0 auto 5rem;
+}
+
+.Hleft-side,
+.Hright-side {
+  width: calc(50% - 0rem);
+}
+
+/* hero left side */
+
+.Hleft-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.res-name {
+  color: var(--accent-color);
+}
+
+.Hleft-side > p,
+h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero-para {
+  max-width: 17.5rem;
+}
+
+.reserve-btn {
+  width: 15rem;
+}
+
+/* hero right side */
+
+.Hright-side {
+  display: flex;
+  justify-content: end;
+}
+
+.hero-img {
+  /* position: absolute; */
+  /* width: 431px; */
+  max-width: 50%;
+  height: 110%;
+  /* top: 3.2rem;
+    left: 67rem; */
+  border-radius: 16px;
+}
