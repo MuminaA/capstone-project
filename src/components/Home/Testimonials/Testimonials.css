@@ -5,7 +5,8 @@
 }
 
 .testimonials-container {
-  max-width: 58%;
+  max-width: 69rem;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

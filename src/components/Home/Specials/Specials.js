@@ -2,6 +2,7 @@ import React from "react";
 import {food} from "../../../Data/Data";
 import Delivery from '../../../assets/delivery.png';
 import './Specials.css';
+import { Link } from "react-router-dom";
 
 const Specials = () => {
   return (
@@ -10,7 +11,7 @@ const Specials = () => {
         <div className="top">
           <h1>This weeks specials!</h1>
           <>
-            <button className="specials-btn">Online Menu</button>
+            <Link className="btn" aria-label="On Click">Online Menu</Link>
           </>
         </div>
         <div className="bottom">

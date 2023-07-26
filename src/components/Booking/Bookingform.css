@@ -1,0 +1,100 @@
+/* Booking form */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 27%;
+  margin: 2rem auto;
+  /* background-color: purple; */
+}
+
+form {
+  display: grid;
+  /* max-width: 400px; */
+  /* background-color: blue; */
+  gap: 20px;
+  /* padding: 3rem 0; */
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.form-container label,
+.form-container select,
+.form-container input {
+  color: var(--main-color);
+  font-family: var(--accent-font);
+  font-size: 1rem;
+}
+
+input, select {
+  padding: .7rem;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: .4rem;
+}
+
+.submit-btn {
+  background-color: var(--accent-color);
+  border-radius: 1.5rem;
+  color: var(--main-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: var(--main-color);
+  color: white;
+  transition: background-color 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.banner-bg {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.table-res {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/* Media Quries */
+
+/* mobile */
+@media (max-width: 480px) {
+  .bottom {
+    flex-direction: column;
+  }
+
+  .item-container {
+    margin-bottom: 2rem;
+  }
+
+  .test-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .link-section > div {
+    max-width: 100%;
+  }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-img,
+  .about-img2 {
+    position: relative;
+    margin: 0 auto 2rem;
+  }
+}

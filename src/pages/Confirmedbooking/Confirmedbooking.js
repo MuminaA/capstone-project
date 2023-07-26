@@ -1,9 +1,14 @@
 import React from 'react';
+import Confirmed from '../../components/Confirmed/Confirmed';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 export const Confimedbooking = () => {
     return (
         <>
-            <h1>Booking confirmed!</h1>
+            <Header />
+            <Confirmed />
+            <Footer />
         </>
     )
 }

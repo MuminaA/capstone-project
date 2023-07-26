@@ -1,11 +1,14 @@
 import React, { useReducer, useEffect, useState } from "react";
-import Bookingform from "../../components/Bookingform/Bookingform";
+import Bookingform from "../../components/Booking/Bookingform/Bookingform";
 import { fetchAPI, submitAPI } from "../../util/fakeAPI";
-import Confirmedbooking from "../Confirmedbooking/Confirmedbooking";
+// import Confirmedbooking from "../Confirmedbooking/Confirmedbooking";
 import { useNavigate } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Bookingbanner from "../../components/Booking/Bookingbanner/Bookingbanner";
 
 const Bookingpage = () => {
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDate, setSelectedDate] = useState('');
   const [availableTimes, setAvailableTimes] = useState([]);
 
   const navigate = useNavigate();
@@ -19,12 +22,12 @@ const Bookingpage = () => {
     }
   };
 
-  const initializeTimes = () => {
-    const date = new Date();
-    const today = date.toISOString().slice(0, 10); // Format date as "YYYY-MM-DD"
+  // const initializeTimes = () => {
+  //   const date = new Date();
+  //   const today = date.toISOString().slice(0, 10); // Format date as "YYYY-MM-DD"
 
-    updateTimes(today);
-  };
+  //   updateTimes(today);
+  // };
 
   useEffect(() => {
     if (selectedDate) {
@@ -48,11 +51,14 @@ const Bookingpage = () => {
 
   return (
     <>
+      <Header/>
+      <Bookingbanner/>
       <Bookingform
         availableTimes={availableTimes}
         onDateChange={(date) => setSelectedDate(date)}
         submitForm={submitForm} // Pass the submitForm function to the Bookingform component
       />
+      <Footer />
     </>
   );
 };

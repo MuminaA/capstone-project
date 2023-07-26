@@ -1,11 +1,12 @@
 import React from "react";
-import Himg from "../../../assets/restauranfood.jpg";
+import restaurantImage from "../../../assets/restauranfood.jpg";
 import './Hero.css';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="hero-container">
+    <section className="hero">
+      <div className="container">
         <div className="Hleft-side">
           <h1 className="res-name">Little Lemon</h1>
           <h2>Chicago</h2>
@@ -13,13 +14,13 @@ const Hero = () => {
             We are a family owned mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <button className="reserve-btn">Reserve a table</button>
+          <Link to='/booking' className="reserve-btn btn" aria-label="On Click">Reserve a table</Link>
         </div>
-        <div className="Hright-side">
-          <img src={Himg} alt={Himg} className="hero-img"></img>
-        </div>
+        {/* <div className="Hright-side"> */}
+        <img src={restaurantImage} alt='Restaurant food' className="hero-img"></img>
+        {/* </div> */}
       </div>
-    </div>
+    </section>
   );
 }
 

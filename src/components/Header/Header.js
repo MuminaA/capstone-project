@@ -1,12 +1,14 @@
 import React from 'react';
 import Logo from '../../assets/Logo.svg';
 import { Link } from 'react-router-dom';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 const Header = () => {
     return (
         <header>
             <nav>
                 <img src={Logo} className='' alt={Logo}></img>
+                <button className='hamburger-menu'><MenuRoundedIcon sx={{ fontSize: 35 }}/></button>
                 <ul className='nav-links'>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/about'>About</Link></li>

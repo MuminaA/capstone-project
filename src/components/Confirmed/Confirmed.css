@@ -1,0 +1,19 @@
+.confirmed-container {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0 18.9rem;
+}
+
+.divider {
+    background-color: var(--main-color);
+    padding: .5rem;
+}
+
+.booking-conf {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}

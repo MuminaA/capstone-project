@@ -5,8 +5,7 @@ import './About.css';
 
 const About = () => {
   return (
-    <div className="about">
-      <div className="about-container">
+    <section className="about">
         <div className="about-item">
           <h1 className="res-name">Little Lemon</h1>
           <h2 className="res-location">Chicago</h2>
@@ -17,12 +16,11 @@ const About = () => {
             aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div id="about-img">
+        <div className="about-img">
           <img src={img2} alt={img2} className="about-img2"></img>
           <img src={img1} alt={img1} className="about-img"></img>
         </div>
-      </div>
-    </div>
+    </section>
   );
 }
 
