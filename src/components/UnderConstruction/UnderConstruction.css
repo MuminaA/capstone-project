@@ -1,0 +1,8 @@
+.construction-container {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0 11.6rem;
+}

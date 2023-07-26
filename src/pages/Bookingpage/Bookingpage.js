@@ -1,11 +1,11 @@
-import React, { useReducer, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Bookingform from "../../components/Booking/Bookingform/Bookingform";
 import { fetchAPI, submitAPI } from "../../util/fakeAPI";
-// import Confirmedbooking from "../Confirmedbooking/Confirmedbooking";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Bookingbanner from "../../components/Booking/Bookingbanner/Bookingbanner";
+import Banner from "../../components/Banner/Banner";
+import {banners} from '../../Data/Data'
 
 const Bookingpage = () => {
   const [selectedDate, setSelectedDate] = useState('');
@@ -39,7 +39,7 @@ const Bookingpage = () => {
     try {
       const isBookingConfirmed = await submitAPI(formData);
       if (isBookingConfirmed) {
-        navigate("/booking-confirmed"); // Navigate to the booking confirmation page
+        navigate("/confirmed"); // Navigate to the booking confirmation page
         console.log('Booking confimed!')
       } else {
         console.error("Booking submission failed");
@@ -52,7 +52,7 @@ const Bookingpage = () => {
   return (
     <>
       <Header/>
-      <Bookingbanner/>
+      <Banner name={banners[0].name}/>
       <Bookingform
         availableTimes={availableTimes}
         onDateChange={(date) => setSelectedDate(date)}

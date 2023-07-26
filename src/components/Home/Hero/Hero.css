@@ -43,6 +43,13 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
+.reserve-btn:hover {
+  background-color: var(--main-color);
+  border: 3px solid var(--accent-color);
+  color: white;
+  transition: 100ms ease-in-out;
+}
+
 /* hero right side */
 
 .hero-img {

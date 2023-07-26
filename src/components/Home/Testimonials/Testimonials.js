@@ -9,7 +9,7 @@ const Testimonials = () => {
         <h1 className="test-header">Testimonials</h1>
         <div className="test-container">
           {testimonials.map((item) => (
-            <div className="test-content">
+            <div className="test-content" key={item.id}>
               <>{item.rating}</>
               <div className="test-info">
                 <img src={item.image} alt={item.image} className="test-img"></img>

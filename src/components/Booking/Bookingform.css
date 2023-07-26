@@ -2,19 +2,17 @@
 
 .form-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 27%;
   margin: 2rem auto;
   /* background-color: purple; */
 }
 
 form {
-  display: grid;
-  /* max-width: 400px; */
+  display: flex;
+  flex-direction: column;
+  width: 35%;
   /* background-color: blue; */
   gap: 20px;
-  /* padding: 3rem 0; */
   color: var(--main-color);
   font-weight: 600;
 }
@@ -48,19 +46,6 @@ input, select {
   cursor: pointer;
 }
 
-.banner-bg {
-  background-color: var(--main-color);
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
-}
-
-.table-res {
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
 /* Media Quries */
 
 /* mobile */
@@ -83,6 +68,10 @@ input, select {
 
   .link-section > div {
     max-width: 100%;
+  }
+
+  form {
+    width: 60%
   }
 }
 

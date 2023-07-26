@@ -16,9 +16,7 @@ const Hero = () => {
           </p>
           <Link to='/booking' className="reserve-btn btn" aria-label="On Click">Reserve a table</Link>
         </div>
-        {/* <div className="Hright-side"> */}
         <img src={restaurantImage} alt='Restaurant food' className="hero-img"></img>
-        {/* </div> */}
       </div>
     </section>
   );
