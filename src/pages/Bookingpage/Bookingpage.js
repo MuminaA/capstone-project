@@ -22,13 +22,6 @@ const Bookingpage = () => {
     }
   };
 
-  // const initializeTimes = () => {
-  //   const date = new Date();
-  //   const today = date.toISOString().slice(0, 10); // Format date as "YYYY-MM-DD"
-
-  //   updateTimes(today);
-  // };
-
   useEffect(() => {
     if (selectedDate) {
       updateTimes(selectedDate);
@@ -40,7 +33,7 @@ const Bookingpage = () => {
       const isBookingConfirmed = await submitAPI(formData);
       if (isBookingConfirmed) {
         navigate("/confirmed"); // Navigate to the booking confirmation page
-        console.log('Booking confimed!')
+        // console.log('Booking confimed!')
       } else {
         console.error("Booking submission failed");
       }

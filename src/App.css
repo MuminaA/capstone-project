@@ -32,7 +32,6 @@ a {
 
 img {
   max-width: 100%;
-  /* display: block; */
 }
 
 /* styles */
@@ -114,8 +113,6 @@ footer {
 }
 
 .footer-logo {
-  /* width: 10rem;
-  height: 20rem; */
   width: 100%;
   max-width: 10rem;
 }

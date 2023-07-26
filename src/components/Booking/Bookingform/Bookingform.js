@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "../Bookingform.css";
-// import { useNavigate } from "react-router-dom";
 
 const Bookingform = ({
   availableTimes,
-  // updateTimes,
   selectedDate,
   onDateChange,
   submitForm,
@@ -15,12 +13,10 @@ const Bookingform = ({
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
 
-  // const navigate = useNavigate();
-
   const handleDateChange = (e) => {
     const selectedDate = e.target.value;
     onDateChange(selectedDate);
-    console.log(selectedDate);
+    // console.log(selectedDate);
   };
 
   const handleFormSubmit = (e) => {
