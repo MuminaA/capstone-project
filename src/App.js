@@ -12,13 +12,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/booking" element={<Bookingpage />} />
-        <Route path='/confirmed' element={<Confimedbooking />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/menu' element={<Menu />} />
-        <Route path='/order' element={<OrderOnline />} />
-        <Route path='/login' element={<Login />} />
+        <Route path="capstone-project/" element={<Homepage />} />
+        <Route path="capstone-project/booking" element={<Bookingpage />} />
+        <Route path='capstone-project/confirmed' element={<Confimedbooking />} />
+        <Route path='capstone-project/about' element={<About />} />
+        <Route path='capstone-project/menu' element={<Menu />} />
+        <Route path='capstone-project/order' element={<OrderOnline />} />
+        <Route path='capstone-project/login' element={<Login />} />
       </Routes>
     </BrowserRouter>
   )
