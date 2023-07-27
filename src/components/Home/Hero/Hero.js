@@ -14,7 +14,7 @@ const Hero = () => {
             We are a family owned mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Link to='/booking' className="reserve-btn btn" aria-label="On Click">Reserve a table</Link>
+          <Link to='/capstone-project/booking' className="reserve-btn btn" aria-label="On Click">Reserve a table</Link>
         </div>
         <img src={restaurantImage} alt='Restaurant food' className="hero-img"></img>
       </div>

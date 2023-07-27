@@ -11,7 +11,7 @@ const Specials = () => {
         <div className="top">
           <h1>This weeks specials!</h1>
           <>
-            <Link to='/menu' className="specials-btn btn" aria-label="On Click">Online Menu</Link>
+            <Link to='/capstone-project/menu' className="specials-btn btn" aria-label="On Click">Online Menu</Link>
           </>
         </div>
         <div className="bottom">
