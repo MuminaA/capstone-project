@@ -18,22 +18,22 @@ const Header = () => {
         {open ? <HamburgerMenu /> : ''}
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/capstone-project">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/capstone-project/about">About</Link>
           </li>
           <li>
-            <Link to="/menu">Menu</Link>
+            <Link to="/capstone-project/menu">Menu</Link>
           </li>
           <li>
-            <Link to="/booking">Reservations</Link>
+            <Link to="/capstone-project/booking">Reservations</Link>
           </li>
           <li>
-            <Link to="/order">Order online</Link>
+            <Link to="/capstone-project/order">Order online</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/capstone-project/login">Login</Link>
           </li>
         </ul>
       </nav>

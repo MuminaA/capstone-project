@@ -32,7 +32,7 @@ const Bookingpage = () => {
     try {
       const isBookingConfirmed = await submitAPI(formData);
       if (isBookingConfirmed) {
-        navigate("/confirmed"); // Navigate to the booking confirmation page
+        navigate("/capstone-project/confirmed"); // Navigate to the booking confirmation page
         // console.log('Booking confimed!')
       } else {
         console.error("Booking submission failed");
